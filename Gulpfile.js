@@ -25,8 +25,8 @@ gulp.task('js', function() {
   return gulp.src('js/**/*.js', {})  //{read:false}
              .pipe(jshint())
              .pipe(jshint.reporter('default'))
-             //.pipe(browserify())
-            // .pipe(uglify())
+             .pipe(browserify())
+             .pipe(uglify())
              .pipe(rename({suffix: '.min'}))
              .pipe(gulp.dest('build/js'))
              .pipe(livereload());

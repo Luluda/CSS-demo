@@ -27,3 +27,6 @@ ul li div {
 ul li .transition-div {
   transition: all 500ms ease;
 }
+body {
+  background-color: #ffffff;
+}
